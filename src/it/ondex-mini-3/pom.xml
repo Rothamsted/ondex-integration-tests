@@ -40,7 +40,7 @@
                            <artifactId>ondex-mini</artifactId>
                            <version>${project.version}</version>
                            <classifier>packaged-distro</classifier>
-                           <type>tar.gz</type>
+                           <type>zip</type>
                            <overWrite>false</overWrite>
                            <outputDirectory>${project.build.directory}/</outputDirectory>
                            <includes>**/*</includes>
@@ -133,11 +133,12 @@
 
    <dependencies>
 
-<!-- depedenencies required for building the run-time env -->      <dependency>
+<!-- depedenencies required for building the run-time env -->      
+		 <dependency>
          <groupId>net.sourceforge.ondex.apps</groupId>
          <artifactId>ondex-mini</artifactId>
          <version>${project.version}</version>
-         <type>tar.gz</type>
+         <type>zip</type>
          <classifier>packaged-distro</classifier>
          <scope>test</scope>
       </dependency>
